@@ -38,7 +38,7 @@ async def update_student(studentId, student: Student):
     return studentEntity(connection.local.student.find_one({"_id": ObjectId(studentId)}))
 
 #Delete a student
-@student_router.delete('/students/{studentId')
+@student_router.delete('/students/{studentId}')
 async def delete_student(studentId):
     #finds the student deletes it and also returns the same student object
     return studentEntity(connection.local.student.find_one_and_delete({"_id": ObjectId(studentId)}))

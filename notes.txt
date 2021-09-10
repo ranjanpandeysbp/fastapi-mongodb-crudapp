@@ -28,3 +28,12 @@ http://127.0.0.1:8000/docs
 19. Make sure to register the student_router to the FastAPI app inside index.py file
 20. Go to the browser and refresh below url, you will see your new endpoint
 http://127.0.0.1:8000/docs
+21. Create schemas/student.py with methods to transform one and many DB object to entity object to send as response to UI
+22. In routes/student.py create other REST endpoints to create, update, delete, find_by_id student
+23. Test all REST API endpoints through swagger url
+24. Git commit and push your code to github using below steps
+git add .
+git commit -m "first commit"
+git remote set-url origin https://<YOUR_GITHUB_USERNAME>:<YOUR_GITHUB_PERSONAL_TOKEN>@github.com/<YOUR_GITHUB_USERNAME>/fastapi-mongodb-crudapp.git
+git push
+25. Enable CORS(Cross Origin Resource Sharing) in index.py file
